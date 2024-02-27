@@ -1,0 +1,15 @@
+<?php
+require_once 'templates/header.phtml';
+require_once 'config.php';
+require_once 'app/models/users.model.php';
+?>
+
+<section>
+    <form action="autenticar" method="POST">
+        <label for="username">Usuario</label>
+        <input type="text" name="username" required>
+        <label for="password">Contraseña</label>
+        <input type="text" name="password" required>
+        <button type="submit">LogIn!</button>
+    </form>
+</section>
